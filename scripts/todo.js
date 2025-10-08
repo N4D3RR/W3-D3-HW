@@ -15,7 +15,7 @@ const formSubmit = function (e) {
   const taskInput = document.getElementById("titolo")
   const noteInput = document.getElementById("note")
   const dataInput = document.getElementById("dataOra")
-
+  // valore input
   const valoreTask = taskInput.value
   const valoreNote = noteInput.value
   const valoreData = dataInput.value
@@ -24,6 +24,7 @@ const formSubmit = function (e) {
   console.log(valoreNote)
   console.log(valoreData)
 
+  //aggiungo li in ul
   const li = document.createElement("li")
   li.textContent = `${valoreTask}${valoreNote ? " - Note: " + valoreNote : ""}${
     valoreData ? " - Entro: " + valoreData : ""
@@ -34,7 +35,9 @@ const formSubmit = function (e) {
 
   addForm.reset()
 
-  li.addEventListener("click", () => li.classList.toggle("completed"))
+  li.addEventListener("click", function () {
+    li.classList.toggle("completed")
+  })
 }
 
 //mostra/nascondi input

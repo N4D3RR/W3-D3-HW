@@ -11,7 +11,7 @@
       <h1>TO DO LIST</h1>
     </header>
     <main>
-      <button id="addTaskBtn">Add Task</button>
+      <button id="addTaskBtn">Aggiungi</button>
       <form id="addTaskForm">
         <div>
           <label for="titolo">Cosa fare</label>
@@ -25,11 +25,13 @@
           <label for="dataOra">Data e Ora</label>
           <input id="dataOra" type="datetime-local" />
         </div>
-        <button>Aggiungi</button>
+        <button id="aggiungi">Aggiungi</button>
       </form>
       <section>
         <div id="tasksContainer">
-          <ul id="addedTasks"></ul>
+          <ul id="addedTasks">
+            <button>Rimuovi</button>
+          </ul>
         </div>
       </section>
     </main>
