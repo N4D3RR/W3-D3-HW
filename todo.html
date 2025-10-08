@@ -10,8 +10,47 @@
     <header>
       <h1>TO DO LIST</h1>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <button id="addTaskBtn">Add Task</button>
+      <form id="addTaskForm">
+        <div>
+          <label for="titolo">Cosa fare</label>
+          <input id="titolo" type="text" required />
+        </div>
+        <div>
+          <label for="note">Note</label>
+          <input id="note" type="text" />
+        </div>
+        <div>
+          <label for="dataOra">Data e Ora</label>
+          <input id="dataOra" type="datetime-local" />
+        </div>
+        <button>Aggiungi</button>
+      </form>
+      <section>
+        <div id="tasksContainer">
+          <ul id="addedTasks"></ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Nader - 2025</p>
+    </footer>
     <script src="/scripts/todo.js"></script>
   </body>
 </html>
+<!-- 
+
+titolo
+un bottone per aggiungere una task
+la lista con il bottone remove a fianco a ogni riga
+
+
+premendo il bottone si apre un form con:
+  - cosa da fare
+  - note
+  - data e ora per completamento
+  bottone "aggiungi"
+premuto il bottone si svuota il form e viene aggiunto alla lista creata aggiungendo il primo elemento della lista
+premendo su un elemento della lista viene barrato
+-->
